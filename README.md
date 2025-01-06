@@ -5,6 +5,6 @@ Record TeleOp Movements, and easily replay for Autonomous to save time and energ
 
 Get Started Here :)
 
-Documentation:
+Documentation: https://rgullapalli.gitbook.io/automac
 
-Discord Link:
+Discord Link: https://discord.gg/CZhbhN9F
