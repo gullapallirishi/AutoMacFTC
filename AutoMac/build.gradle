@@ -18,7 +18,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-        multiDexEnabled true
+//        multiDexEnabled true
     }
 
     buildTypes {
@@ -38,7 +38,7 @@ dependencies {
     compileOnly 'org.firstinspires.ftc:Hardware:10.1.0'
     compileOnly 'org.firstinspires.ftc:FtcCommon:10.1.0'
     compileOnly 'com.fasterxml.jackson.core:jackson-databind:2.12.7'
-    implementation libs.multidex
+//    implementation libs.multidex
 
     implementation libs.appcompat
     implementation libs.material
