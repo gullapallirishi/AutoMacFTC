@@ -1,17 +1,20 @@
 plugins {
-    alias(libs.plugins.android.library)
+//    alias(libs.plugins.android.library)
+    id 'com.android.library'
     id 'maven-publish'
 }
-
+//repositories {
+//    maven { url 'https://jitpack.io' }
+//}
 android {
     namespace 'com.rishigullapalli.automac'
-    compileSdk 34
+    compileSdk 30
 
     defaultConfig {
         minSdk 24
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.2"
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -32,6 +35,7 @@ android {
 dependencies {
     compileOnly 'org.firstinspires.ftc:RobotCore:10.1.0'
     compileOnly 'org.firstinspires.ftc:Hardware:10.1.0'
+    compileOnly 'org.firstinspires.ftc:FtcCommon:10.1.0'
     compileOnly 'com.fasterxml.jackson.core:jackson-databind:2.12.7'
 
     implementation libs.appcompat
@@ -49,7 +53,7 @@ afterEvaluate {
 
                 groupId = 'com.github.gullapallirishi'
                 artifactId = 'AutoMac'
-                version = '1.0.2'
+                version = '1.0'
             }
         }
     }
